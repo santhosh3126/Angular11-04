@@ -1,0 +1,23 @@
+<div>
+    <h2>Enrollment List</h2>
+</div>
+<div class="panel-body">
+    <table>
+        <thead>
+            <tr>
+                <td>Student Id</td>
+                <td>Student Name</td>
+                <td>Student Dept</td>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let enr of enrollments | async">
+                <td>{{enr.stdid}}</td>
+                <td>{{enr.stdName}}</td>
+                <td>{{enr.stdDept}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
